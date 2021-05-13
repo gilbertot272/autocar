@@ -34,7 +34,7 @@ nav{
     display: flex;
     align-items:center;
     justify-content: space-around;
-    min-height:12vh;
+    min-height:10vh;
     background-color: #000000;
     
     
@@ -258,7 +258,9 @@ h2{
 
 @media (max-width:768px) {
     body{
-      overflow:hidden;
+        background-color:rgba(168, 148, 148, 0.726);
+
+     
     }
       .ham{
           display:block;
