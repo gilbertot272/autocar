@@ -1,0 +1,498 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+
+/*html{
+font-size:62.5% ;
+box-sizing: border-box;
+}
+*/
+
+body {
+    
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        font-family:'Anton', sans-serif;;
+        background-color: #05050594;
+        background-size:auto;
+      
+    
+    
+  }
+
+
+
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    min-height:10vh;
+    background-color: #000000;
+    
+    
+    
+}
+
+h1{
+    font-size: 1rem;
+    color: #ffffff;
+    padding-left:25px;
+    
+}
+
+h2{
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgba(124, 11, 11, 0.863);
+    padding-left:5px;
+    text-align: center;
+
+}
+
+
+.ham{
+    display:none;
+    background-color:transparent;
+    cursor: pointer;
+    border:none;
+    margin:0;
+    padding:0;
+    
+    }
+    
+    .ham span{
+        background-color: #bd0303;
+        display:block;
+        height:3px;
+        width: 28px;
+        margin:10px auto;
+        border-radius:2px;    
+    }
+
+    .enlaces-menu{
+        display:flex;
+        padding:0;
+    }
+    .enlaces-menu li{
+        display: inline-block;
+        list-style: none;
+        padding: 6px 20px;
+        font-weight: 500;
+        font-size: 1rem;
+        transition:all 0.3s ease 0s ;
+        cursor: pointer;
+    }
+    
+    .enlaces-menu li a{
+        text-decoration: none;
+        color: #ffffff;
+        
+    }
+    .enlaces-menu li:hover{
+        border-radius: 20px;
+        background-color: #920606;
+        color: #ffffff;
+    }
+
+
+
+
+
+    .slide-contenedor{
+        max-width:100%;
+        max-height: 100vh;
+        width: 100%;
+        height:auto;
+        position: relative;
+        overflow: hidden;
+        margin: auto; 
+    }
+
+
+
+    .miSlider img{
+        width: 100%;
+        max-height: 100vh;
+        height: inherit;
+        object-fit: cover;
+        vertical-align: top;
+        transition: 2s;
+    }
+    
+    .direcciones{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    .direcciones a{
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        padding: 20px;
+        text-decoration: none;
+    }
+    
+    .direcciones a:hover{
+        background: rgba(0, 0, 0, .5);
+        transition: .4s;
+    }
+    
+    .barras{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom:15px;
+    }
+    
+    .barra{
+        cursor: pointer;
+        height:2px;
+        width: 25px;
+        margin: 0 2px;
+        background: #dcdde1;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    .active{
+        
+        background-color: #f00a0af5;
+    }
+    
+    .fade{
+        animation-name: fade;
+        animation-duration: 3s;    
+    }
+    
+    @keyframes fade {
+        from {opacity: .7;}
+        to{opacity:1;}
+    }
+
+   .cont2{
+    max-width:100%;
+        max-height: 100vh;
+        width: 100%;
+        height:auto;
+        position: relative;
+        overflow: hidden;
+        margin: auto; 
+   }
+
+   .mii-img{
+    width: 100%;
+    max-height: 100vh;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+   }
+
+
+   .video{
+    max-width:100%;
+    max-height: 100vh;
+    width: 100%;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+    margin: auto; 
+    
+
+
+   }
+   .mii-video{
+    width: 100%;
+    max-height: 100vh;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+
+   }
+
+   
+   
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    /* DISPOSITIVOS MOVILES */
+
+@media (max-width:768px) {
+    body{
+        background-color:rgba(168, 148, 148, 0.726);
+
+     
+    }
+      .ham{
+          display:block;
+          cursor:pointer;
+          position: absolute; 
+          top:15px;
+          right:25px;
+          transition: 0.2s  0.1s; 
+  
+      }
+   
+      
+      nav{
+          flex-direction:column;
+          align-items: flex-start;
+          padding-top: 25px;
+          padding-bottom: 25px;
+      }
+
+      /*.logo{
+        padding-left:25px;
+        
+      }
+      */
+
+      .enlaces-menu{
+        
+          flex-direction:column;
+          justify-content: space-around;
+          align-items:center;
+          height: 92vh;         
+          margin:0;
+          padding:0; 
+          display:none;
+          opacity:0;
+          transition: opacity 5s ease-out;
+          width:100%;
+      
+         
+      }
+      .enlaces-menu li{
+         
+        text-align:center;
+        width:100%;
+        padding:20px;     
+    }
+    
+   
+}
+    
+    /* .miSlider{
+        display: none;
+        transition: 2s;
+        max-height: 100vh;
+    } */
+
+ 
+    .slide-contenedor{
+        max-width:100%;
+        max-height: 100vh;
+        width: 100%;
+        height:auto;
+        position: relative;
+        overflow: hidden;
+        margin: auto; 
+    }
+
+    
+
+    .miSlider img{
+        width: 100%;
+        max-height: 100vh;
+        height: inherit;
+        object-fit: cover;
+        vertical-align: top;
+        transition: 2s;
+    }
+
+    
+    .direcciones{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    .direcciones a{
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        padding: 20px;
+        text-decoration: none;
+    }
+    
+    .direcciones a:hover{
+        background: rgba(0, 0, 0, .5);
+        transition: .4s;
+    }
+    
+    .barras{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom:15px;
+    }
+    
+    .barra{
+        cursor: pointer;
+        height:5px;
+        width: 25px;
+        margin: 0 8px;
+        background: #dcdde1;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    .active{
+        
+        background-color: #ff0000f5;
+    }
+    
+    .fade{
+        animation-name: fade;
+        animation-duration: 3s;    
+    }
+    
+    @keyframes fade {
+        from {opacity: .7;}
+        to{opacity:1;}
+    }
+
+    
+    
+    
+
+    
+
+  
+
+
+
+
+
+
+
+/* Animaciones */
+  
+@keyframes muestraMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .enlaces-menu.activado{
+      display:flex; 
+      animation: muestraMenu 350ms ease-in-out both;
+  }
+
+  .br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+  }
+  
+  .br-2.animado{
+    opacity: 0;
+  }
+  .br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+  }
+
+ .ham.girar:hover{
+     transform:rotate(360deg);
+ }
+
+
+/*ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 6px 20px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    transition:all 0.3s ease 0s ;
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+
+
+ul li:hover{
+   
+    border-radius: 20px;
+    background-color: #920606;
+    color: #ffffff;
+}*/
+
+header{
+    position: absolute;
+    bottom: 30%;
+    padding: 0 50px;
+}
+ 
+header h2{
+    font-size: 6.5rem;
+    color: #ffffff;
+}
+
+
+
+
+
+header button{
+    padding: 0.5px;
+    width: 140 px;
+    outline: none;
+    border: 0;
+    height: 40 px;
+    font-weight: 500;
+    background-color: #eb3333;
+}
+
+
+h1{
+    border-radius: 30px;
+    background-color:transparent;
+    color: #ffffff;
+    
+    padding: 5px;
+
+    
+}
+h1:hover{
+    border-radius: 20px;
+        background-color: #920606;
+        color: #ffffff;
+}
+
