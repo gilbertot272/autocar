@@ -20,7 +20,7 @@ body {
         padding: 0;
         line-height: 1.6;
         font-family:'Anton', sans-serif;;
-        background-color:rgba(168, 148, 148, 0.726);
+        background-color: #05050594;
         background-size:auto;
       
     
@@ -40,16 +40,6 @@ nav{
     
     
 }
-
-
-  
-  
-  
-    
-   
-    
-
-
 
 h1{
     font-size: 1rem;
